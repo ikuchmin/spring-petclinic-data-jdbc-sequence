@@ -43,27 +43,27 @@ class OwnerRepositoryTest {
 
         petRepository.saveAll(List.of(rex, bella, lucy, max, charlie, molly));
 
-//        Owner owner = new Owner();
-//        owner.setFirstName("John");
-//        owner.setLastName("Doe");
-//
-//        // when
-//        owner.getOwnerPetRefs().addAll(List.of(
-//                new OwnerPetRef(null, AggregateReference.to(rex.getId())),
-//                new OwnerPetRef(null, AggregateReference.to(bella.getId())),
-//                new OwnerPetRef(null, AggregateReference.to(lucy.getId()))
-//        ));
-//
-//        owner = ownerRepository.save(owner);
-//
-//        // when 2
-//        owner.getOwnerPetRefs().addAll(List.of(
-//                new OwnerPetRef(null, AggregateReference.to(max.getId())),
-//                new OwnerPetRef(null, AggregateReference.to(charlie.getId())),
-//                new OwnerPetRef(null, AggregateReference.to(molly.getId()))
-//        ));
-//
-//        ownerRepository.save(owner);
+        Owner owner = new Owner();
+        owner.setFirstName("John");
+        owner.setLastName("Doe");
+
+        // when
+        owner.getOwnerPetRefs().addAll(List.of(
+                new OwnerPetRef(null, AggregateReference.to(rex.getId())),
+                new OwnerPetRef(null, AggregateReference.to(bella.getId())),
+                new OwnerPetRef(null, AggregateReference.to(lucy.getId()))
+        ));
+
+        owner = ownerRepository.save(owner);
+
+        // when 2
+        owner.getOwnerPetRefs().addAll(List.of(
+                new OwnerPetRef(null, AggregateReference.to(max.getId())),
+                new OwnerPetRef(null, AggregateReference.to(charlie.getId())),
+                new OwnerPetRef(null, AggregateReference.to(molly.getId()))
+        ));
+
+        ownerRepository.save(owner);
     }
 
 }
