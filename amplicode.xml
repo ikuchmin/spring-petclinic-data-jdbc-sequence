@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AmplicodeDatabaseMigrationSettings" lastSelectedDirectory="src/main/resources/db/migration" />
+  <component name="AmplicodePersistenceUnitSettings">
+    <persistence-units>
+      <persistence-unit moduleName="spring-petclinic-data-jdbc-sequence.main" name="Default">
+        <packages>
+          <package value="ru.amplicode.spring_data_jdbc.spring_petclinic_data_jdbc_sequence" />
+        </packages>
+      </persistence-unit>
+    </persistence-units>
+  </component>
+</project>
